@@ -7,8 +7,6 @@ exports.send = (req, res) =>{
 
     data = JSON.stringify(data);
 
-    console.log(data);
-
     var options = {
         host: 'localhost',
         port: 3001,
@@ -25,7 +23,6 @@ exports.send = (req, res) =>{
         response.setEncoding('utf8');
         response.on('data', function (chunk) {
             dadosMensagemEnviada = chunk;
-            console.log(chunk);
             chunk = JSON.parse(chunk);
             res.status(201).send(`{"message_status": True,"target_id": ${chunk.target_id},"from":${chunk.from},"message":${chunk.message}}`);
         });
