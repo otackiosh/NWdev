@@ -9,6 +9,7 @@ Envio de mensagem:
     Endereço: http://localhost:3002/
     formato: JSON
     exemplo de mensagem: {"from": 10,"target_id": 3,"media": false,"message": "Oi"}
+    ou {"from": 10,"target_id": 3,"media": false} caso queira uma mensagem aleatória do banco de dados
 
 Listar todas mensagens:
 
