@@ -1,6 +1,6 @@
 const Mensagem = require('../Models/mensagem');
 const http = require('http');
-//var querystring = require('querystring');
+
 
 exports.send = (req, res) =>{
     var data = new Mensagem(req.body);
